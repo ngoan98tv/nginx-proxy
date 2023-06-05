@@ -15,7 +15,6 @@ services:
       - ./vhost:/etc/nginx/vhost.d
       - ./html:/usr/share/nginx/html
       - ./certs:/etc/nginx/certs
-      - ./modsecurity:/etc/modsecurity.d
     labels:
       - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy=true"
 
@@ -35,7 +34,7 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
 
   letsencrypt:
-    image: jrcs/letsencrypt-nginx-proxy-companion
+    image: nginxproxy/acme-companion
     container_name: nginx-proxy-le
     restart: always
     depends_on:
