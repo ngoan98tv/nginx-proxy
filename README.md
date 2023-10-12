@@ -19,3 +19,7 @@ networks:
     external: true
     name: nginx-proxy
 ```
+
+## Reference
+
+https://github.com/nginx-proxy/nginx-proxy
