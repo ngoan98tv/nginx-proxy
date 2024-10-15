@@ -1,8 +1,7 @@
-version: '3'
-
 services:
   nginx:
-    image: owasp/modsecurity-crs:nginx
+    # image: owasp/modsecurity-crs:nginx
+    image: nginx:stable-alpine
     container_name: nginx-proxy
     restart: always
     ports:

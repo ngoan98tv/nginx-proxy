@@ -1,5 +1,7 @@
-acme
-certs
-conf
-html
-vhost
+acme/*
+certs/*
+conf/*
+html/*
+vhost/*
+!vhost/default
+!.gitkeep
